@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:editor/widgets/textfieldeditor.dart';
+import 'package:editor/widgets/telaeditor.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,9 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: TextFieldEditor(),
-        ),
+        body: TelaEditor(key: ValueKey('TelaPrincipal')),
       ),
     );
   }
